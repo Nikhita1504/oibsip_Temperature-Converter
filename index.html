@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="tempCalc" onsubmit="calculateTemp(); return false;">
+      <label for="temp">Temperature Converter</label><br>
+      <input type="number" name="temp" id="temp">
+
+
+      <select name="from_unit" id="from_unit">
+        <option value="cel">°Celsius</option>
+        <option value="fah">°Fahrenheit</option>
+        <option value="kel">Kelvin</option>
+      </select>
+
+
+      <select name="to_unit" id="to_unit">
+        <option value="cel">°Celsius</option>
+        <option value="fah">°Fahrenheit</option>
+        <option value="kel">Kelvin</option>
+      </select><br>
+
+      <input type="submit" name="temp"><br>
+      <span id="result-container"></span>
+    </form>
+  </div>
+  <script src="script.js"> </script>
+</body>
+
+
+</html>
